@@ -1,6 +1,6 @@
 # Combinatorial Parser
 
-### Functional expressions in Clojure
+### Functional expressions
 
 - Developed functions `constant`, `variable`, `add`, `subtract`, `multiply`, `divide`, `med` and `avg`, that take an arbitrary number of arguments
 - An expression parser has been developed that reads expressions in the standard Clojure form
@@ -18,7 +18,7 @@ Expression `2x-3` representation:
 ```
 `(parseFunction "(- (* 2 x) 3)")` is equivalent to `expr`.
 
-### Clojure Object Expressions
+### Object Expressions
 
 - Developed constructors `Constant`, `Variable`, `Add`, `Subtract`, `Multiply` и `Divide` to represent expressions with variables.
 - A function `evaluate` has been developed, that calculates an expression if the values of the variables are known
