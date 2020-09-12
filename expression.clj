@@ -1,5 +1,5 @@
 
-; HW 10
+; Functional expressions
 (defn constant [v] (constantly v))
 (defn variable [v] #(get %1 v))
 (defn oper [f] (fn[& args] (fn [vars] (f (mapv (fn [x] (x vars)) args)))))
@@ -12,7 +12,7 @@
 (def med (oper #(nth (sort %) (quot (count %) 2))))
 (def avg (oper #(/ (double (apply + %)) (double (count %)))))
 
-; HW 11
+; Object Expressions
 
 (defn proto-get [obj key]
   (cond
@@ -130,7 +130,7 @@
       (apply (get OPERS_OBJ (first expr)) (parseArgs (rest expr) 1))
       (parseDigits expr 1))))
 
-; HW 12
+; Combinatorial parser
 
 
 (defn -return [value tail] {:value value :tail tail})
