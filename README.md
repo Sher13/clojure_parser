@@ -1,4 +1,4 @@
-# Combinatorial Parser
+# Parser Combinator
 
 ### Functional expressions
 
